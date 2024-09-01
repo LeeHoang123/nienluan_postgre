@@ -30,7 +30,7 @@
     </form>
 
     <!-- Bảng để hiển thị dữ liệu từ MongoDB -->
-    <table id="userData">
+<!--     <table id="userData">
         <thead>
           <tr>
             <th>Tên người dùng </th>
@@ -53,7 +53,48 @@
             </tr>
             <!-- Thêm các hàng khác tương tự -->
         </tbody>
-    </table>
+    </table> -->
+
+    <!-- This table displays user data in a structured format -->
+<table id="userData">
+    <!-- Table header defining the column names -->
+    <thead>
+        <tr>
+            <!-- Column for the user's name -->
+            <th>Tên người dùng</th>
+            <!-- Column for the user's phone number -->
+            <th>Số điện thoại</th>
+            <!-- Column for the user's address -->
+            <th>Địa chỉ</th>
+            <!-- Column for the user's position -->
+            <th>Vị trí</th>
+            <!-- Column for actions like editing or deleting user data -->
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- A row representing an individual user's data -->
+        <tr>
+            <!-- Cell containing the name of the user -->
+            <td>Người dùng 1</td>
+            <!-- Cell containing the phone number of the user -->
+            <td>Số điện thoại 1</td>
+            <!-- Cell containing the address of the user -->
+            <td>Địa chỉ 1</td>
+            <!-- Cell containing the position of the user -->
+            <td>Vị trí 1</td>
+            <!-- Cell containing action buttons for the user data -->
+            <td>
+                <!-- Button to edit the user's information, calls editUser function with parameters -->
+                <button onclick="editUser('Người dùng 1', 'Số điện thoại 1', 'Địa chỉ 1', 'Vị trí 1')">Chỉnh sửa</button>
+                <!-- Button to delete the user's data, calls deleteUser function with the user's name as parameter -->
+                <button onclick="deleteUser('Người dùng 1')">Xoá</button>
+            </td>
+        </tr>
+        <!-- Additional rows for other users would be added here in a similar format -->
+    </tbody>
+</table>
+
 
 
     <!-- Form để nhập thông tin chỉnh sửa -->
