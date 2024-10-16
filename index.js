@@ -7,10 +7,10 @@ const app = express();
 
 // Kết nối đến PostgreSQL
 const pool = new Pool({
-    user: 'users_d69e_user',
-    host: 'dpg-cmp5kumn7f5s73dc0bjg-a.singapore-postgres.render.com',
-    database: 'users_d69e',
-    password: '2uY5TDuPaMZrlddhS7C01XhS5usVBnH6',
+    user: 'leehoang_user',
+    host: 'dpg-cs7niqqj1k6c73fk2700-a.singapore-postgres.render.com',
+    database: 'leehoang',
+    password: 'HCrpWSYSqlkfuJvMYmcywpbq8w3EvQm5',
     port: 5432,
     ssl: true // Sử dụng SSL/TLS
 });
